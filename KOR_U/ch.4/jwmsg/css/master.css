@@ -1,0 +1,229 @@
+* {
+    margin:0;
+    padding:0;
+    animation-name: pageload;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+
+@keyframes pageload {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+body,html{
+    width: 100%;
+    height: 100%;
+    background: #666;
+}
+
+nav{
+    background-color: #FDFDFD;
+    box-shadow: 0px 1px 10px -1px;
+    padding:10px 10%;
+    width: 80%;
+    position: fixed;
+    z-index: 9998;
+}
+
+nav a{
+    text-decoration: none;
+    color: #555;
+    display: inline-block;
+}
+nav a:hover{
+    text-decoration: none;
+    color: #000;
+}
+nav a h3{
+    font-size: 1.3rem;
+    display: inline-block;
+} 
+nav ul.menu{
+    display: inline-block;
+    float: right;
+}
+nav ul.menu li{
+    float: left;
+    vertical-align: bottom;
+    list-style: none;
+    margin:0px 10px;
+}
+nav ul.menu li a{
+    font-weight: 400;
+}
+
+main{
+    padding-top: 70px;
+    text-align: center
+}
+section{
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+    margin:5px 0px;
+}
+div.jumbo-box{
+    padding:3% 3%;
+    background:#dbdbdb;
+    border-radius: 5px;
+    
+}
+div.jumbo-box h1{
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+div.jumbo-box p{
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+button.jh1{
+    padding:10px 15px;
+    border-radius: 5px;
+    background: #FFF;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px -2px #000;
+    transition: box-shadow 0.2s;
+    margin:10px 0px;
+}
+
+button.jh1:hover{
+    box-shadow: 0px 0px 12px -1px #000;
+}
+
+button.jh1:active{
+    box-shadow: 0px 0px 15px 0px #000;
+}
+button.jh2{
+    padding:10px 15px;
+    border-radius: 5px;
+    background: dodgerblue;
+    float: right;
+    color: #FFF;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px -2px #000;
+    transition: box-shadow 0.2s;
+    margin:10px 0px;
+}
+
+button.jh2:hover{
+    box-shadow: 0px 0px 12px -1px #000;
+}
+
+button.jh2:active{
+    box-shadow: 0px 0px 15px 0px #000;
+}
+
+div.card{
+    display: inline-block;
+    text-align: left;
+    border: 1px solid #f0f0f0;
+    background: #FDFDFD;
+    width: 24%;
+    box-shadow: 0px 1px 5px -1px;
+    padding:10px 3%;
+    transition: box-shadow 0.3s;
+    margin:1% 1%;
+}
+div.card:hover{
+    box-shadow: 0px 1px 5px -0px;
+    transition: box-shadow 0.3s;
+}
+div.card h1{
+    margin-bottom: 10px;
+}
+div.card p{
+    margin-bottom: 3px;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+button.jp1{
+    border:none;
+    background:none;
+    padding:10px 15px;
+    color: dodgerblue;
+    outline:none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+button.jp1:hover{
+    color: rgb(24, 113, 202);
+}
+
+.floatr{
+    float: right;
+}
+
+.cardGroup{
+    text-align: center
+}
+
+
+div.groupBox{
+    padding:0;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0px 1px 5px -1px;
+}
+
+div.groupBox .header{
+    padding: 1% 1%;
+    background: #dfdfdf;
+    border-bottom: 1px solid  #cfcfcf;
+}
+
+div.groupBox .content{
+    padding: 1% 1%;
+}
+
+
+footer{
+    margin-top:50px;
+    background: #f3f3f3;
+    padding:5%;
+    width:90%;
+    box-shadow: 0px -1px 5px -1px;
+}
+
+
+.modal{
+    display: block;
+    position: fixed;
+    width:300px;
+    left: 50%;
+    top: 1%;
+    transform: translate(-50%, -0%);
+    z-index: 9999;
+    background: #FFF;
+    padding: 10px 20px;
+    box-shadow: 0px 1px 5px -0px;
+    transition: top 0.5s, transform 0.5s, display 0.5s;
+}
+
+.modal.hidden{
+    top: 0%;
+    transform: translate(-50%, -110%);
+    transition: top 0.5s, transform 0.5s, display 0.5s;
+}
+
+.modal .header{
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+
+}
